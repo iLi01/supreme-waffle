@@ -1,0 +1,440 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+:root {
+  --red-highlight: RGB(226 52 55);
+  --darker-red: #D31E25;
+  --pink-highlight: #E09A8E;
+  --yellow-tone: #fcf9ed;
+  --darker-blue: #798897;
+}
+
+html {
+  font-size: 16px;
+  background-color: rgb(234, 234, 234);
+}
+
+nav {
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  position: relative;
+  z-index: 15;
+  top: -0.9rem;
+  width: 100%;
+  border-radius: 0 0 1.6rem 1.6rem;
+}
+
+/* iLi's stuff */
+#logo-img {
+  height: 4.2vh;
+  margin: 0.7rem;
+}
+
+#nav-section {
+  z-index: 15;
+  padding: unset !important;
+}
+
+.menu-text {
+  padding: 1rem 0;
+  position: absolute;
+  top: -100vh;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  list-style: none;
+  background-color: rgba(255, 255, 255, 0.887);
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+  border-radius: 1rem;
+}
+
+.open .menu-text {
+  top: 100%;
+}
+
+.menu-text li a:visited,
+.menu-text li a:link,
+#footer-nav li a:visited,
+#footer-nav li a:link {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+  color: black;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu-text li a:hover,
+.menu-text li a:active,
+#footer-nav li a:hover,
+#footer-nav li a:active {
+  color: var(--darker-red);
+}
+
+.svg-btn {
+  background-color: unset;
+  border: none;
+}
+
+.close {
+  display: none;
+}
+
+.open .menu {
+  display: none;
+}
+
+.open .close {
+  display: block;
+}
+#hero-section {
+  padding: unset !important;
+  max-width: 100%;
+  max-height: 80%;
+}
+
+.image-slideshow {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* change the height of the images & gradient here: */
+.image-slideshow img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+
+.overlay::before {
+  content: "";
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  background: linear-gradient(
+    320deg,
+    rgba(225, 49, 49, 0.9) 20%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  z-index: 1;
+}
+
+.fade {
+  /* animation-name: none; --if the fading is too much */
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#first-word {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 3.6rem;
+  font-weight: 1000;
+  letter-spacing: 0.6rem;
+  line-height: 3.3rem;
+  color: rgb(255, 255, 255);
+}
+
+#hero-text {
+  position: absolute;
+  bottom: 2rem;
+  right: 1rem;
+  direction: rtl;
+  font-size: 1.5rem;
+  font-weight: 550;
+  color: rgba(255, 255, 255, 0.462);
+  letter-spacing: 0.3rem;
+  word-spacing: 0.5rem;
+  z-index: 2;
+  line-height: 1.5rem;
+}
+
+#hero-button {
+  border: none;
+  border-radius: 3rem;
+  margin: 0.7rem;
+  padding: 1rem;
+  background-color: white;
+  font-weight:800;
+  font-size: 0.7rem;
+}
+
+#hero-button:hover {
+  background-color: var(--pink-highlight);
+  color: white;
+}
+/* iLi's end of stuff */
+
+.hero-text-c {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+
+section,
+.footer-c {
+  padding: 4rem 1rem 0 1rem;
+  max-width: 80%;
+  margin: 0 auto;
+  border-radius: 1rem;
+}
+
+.about-us,
+.about-info-c,
+.gallery {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.3rem;
+}
+
+.text-c {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  font-size: 1.2rem;
+}
+
+.text-c {
+  text-align: center;
+}
+
+.about-img-c {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.about-img-c img {
+  height: 425px;
+}
+
+.gallery-grid-c {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.image-c {
+  height: 140px;
+  overflow: hidden;
+}
+
+.image-c:hover img {
+  transform: scale(130%);
+}
+
+.image-c img {
+  transition: all 0.3s ease-in-out;
+  width: 220px;
+  transform: scale(100%);
+}
+
+/*BANNER SECTION START*/
+.discount-banner {
+  /* border: 1px solid black; */
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  background: linear-gradient(10deg, var(--darker-red), var(--pink-highlight));
+  align-items: center;
+  border-radius: 4rem;
+  flex-direction: column;
+  color: white;
+}
+
+.discount-text-c {
+  text-align: center;
+}
+
+.discount-code {
+  /* border: 1px solid black; */
+  border-radius: 2rem;
+  display: inline-block;
+  padding: 1rem;
+  font-size: 0.8rem;
+  /* background-color: white; */
+}
+
+.discount-code p {
+  font-size: 1rem;
+}
+/*BANNER SECTION END*/
+
+/*BAG VARIATION SECTION START*/
+.bag-variation-section {
+  /* margin: 2rem 1rem; */
+  display: flex;
+  justify-content: space-around;
+}
+
+.bag-variation {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.bag-variation-container {
+  border: 3px solid var(--darker-blue);
+  padding: 2rem;
+  /* padding-top: unset; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.bag-varition-btn {
+  width: 100%;
+  padding: 0.5rem;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  /* background-image: rgb(224, 224, 224); */
+  background-color: rgb(205, 205, 205);
+  color: black;
+  border-radius: 1rem;
+}
+
+.bag-varition-btn:hover {
+  background-color: RGB(226 52 55);
+  /* background-image: linear-gradient(10deg, red, orange, white); */
+  color: white;
+}
+/*BAG VARIATION SECTION START*/
+
+@media only screen and (min-width: 800px) {
+  .svg-btn {
+    display: none;
+    background-color: unset;
+    border: none;
+  }
+
+  /* iLi's media */
+  .image-slideshow img {
+    height: 80vh;
+  }
+
+  .menu-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    position: unset;
+  }
+
+  .menu-text li {
+    list-style: none;
+  }
+
+  #hero-button {
+    border: none;
+    border-radius: 3rem;
+    margin: 1.5rem;
+    padding: 1.3rem;
+    background-color: white;
+    font-weight:900;
+    font-size: 1.5rem;
+  }  
+
+  #logo-img {
+    height: 8vh;
+  }
+
+  #first-word {
+    font-size: 7rem;
+    font-weight: 1000;
+    letter-spacing: 0.9rem;
+    line-height: 7.5rem;
+  }
+
+  #hero-text {
+    bottom: 3rem;
+    right: 3.5rem;
+    font-size: 3rem;
+    word-spacing: 1.3rem;
+    letter-spacing: 0.7rem;
+    line-height: 3rem;
+    font-weight: 600;
+  }
+
+  /* iLi's end of media */
+
+  .gallery-grid-c {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+
+  .about-info-c {
+    flex-direction: row;
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text-c {
+    width: 50%;
+  }
+
+  .about-img-c {
+    width: 50%;
+  }
+
+  .about-img-c img {
+    height: 600px;
+    transform: translateY(-20%);
+  }
+  .discount-banner {
+    flex-direction: unset;
+  }
+  .discount-code {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .bag-variation-container {
+    text-align: center;
+  }
+  .bag-variation {
+    flex-direction: row;
+  }
+}

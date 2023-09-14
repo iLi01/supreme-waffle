@@ -1,0 +1,53 @@
+ideas - 
+Toothpaste
+electric bike
+drink
+crisp
+soap
+gel pens
+pencil 
+pencilcase
+lunchbox
+school bag
+
+navbar header
+hero
+about us
+discount code
+slide show
+the bag variations
+contact us
+footer
+
+"Elevate Your Everyday with BritPack."
+
+It seems that Dan has kicked us all out of the group chat so I am going to do my update for what I did this morning on here.
+
+I have updated everything to be as responsive as it can be.
+
+I have taken about some of the black borders around some of the items because i feel that it looks better over all but if you feel differently about this, please message me and we can discuss it. I have not deleted the border, just put them as notes, we can easily put them back.
+
+I have also worked in basic responsiveness for the site dealing with make the discount banner responsive on mobile so it doesn't crush into it self and making sure the footer is functioning.
+
+I have also updated the font for the project let me know what you think and if you don't like it, see if you can find something that would work and let me know and we can always see what it looks like.
+
+I have also changed the structure of the website as I believe the bags are more important than the gallery, so i have changed them around.
+
+Task for today before we going into the meeting with big boss man Dan are as follows - 
+
+Ili - 
+
+Work on the hero, see if you can get the text in the center and then send me an image, dont push just incase we decide not to go with.
+
+Edil - 
+
+Would you be able to work if you can make the bag variation responsive, its clips the edges of the page at around 900px so you would just need to make so padding smaller maybe even the changing the gap in the flexbox would work. If you need help, send me a message on teams and i'll try to get back to you as soon as possible.
+
+Isaac - if you have time to work on the contact us form that would be great just to make it better laid out, and some color transitions for the button, you can see how Edil has done that in line 305 and 316 on the css style sheet.
+
+I want to say that the website looks great and ii functions as intended, i'll add some scroll later today before the meeting so that when you click from the nav bar at the top and in the footer, it takes you to that section.
+
+You guys did amazing work and we're ready for this evening.
+
+Have a great day everyone!
+
